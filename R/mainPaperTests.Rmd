@@ -177,3 +177,27 @@ print(summary(M))
 M <- lm(happy ~ perceived_attractiveness, data = df_beautified)
 print(summary(M))
 ```
+
+Confidence intervals for the B1's of the simple linear models
+```{r}
+M <- lm(happy ~ perceived_attractiveness, data = df_original)
+print("original")
+print(confint(M, level=0.95))
+print("")
+print("\n------------\n")
+print("")
+M <- lm(happy ~ perceived_attractiveness, data = df_beautified)
+print("beautified")
+print(confint(M, level=0.95))
+```
+```{r}
+ggplot(medians_df, aes(x = perceived_attractiveness, y = intelligence, color=beautification)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE, level = 0.95) +
+  theme_minimal() + 
+  theme(legend.position = "none",plot.title = element_text(hjust = 0.5)) + 
+  scale_color_manual(values = c("original" = "#e7a254", "beautified" = "#c1b4f9")) +
+  labs(title = "Attractivenes vs. Intelligence - PRI and POST Data",
+       x = "Attractiveness",
+       y = "Intelligence")
+```

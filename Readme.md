@@ -16,19 +16,18 @@ The data is available in the corresponding Zenodo repository (link).
 # Pre-computed Models in R
 
 
-Along with the CSV files, all the statistical models generated have also been made available for ease of use. These are placed in "csv_storage/models". In case you wish to re-run these models, all the code is available in the R scripts. Please remember to set the flags to the appropriate values to generate the model files.
+Along with the CSV files, all the statistical models generated have also been made available for ease of use. These are placed in "csv_storage/models". In case you wish to re-run these models, all the code is available in the R scripts. Please remember to set the flags to the appropriate values to generate the model files. In case you want to recompute the models, please run the appropriate file as described in the following section.
 
 
 # Running Tests in R
 
 
-Unlike the figure generation code in python, the R tests are split into multiple subfiles. Below is a short description of the tests available in each file:
-
+Unlike the figure generation code in python, the R tests are split into multiple subfiles. Below is a short description of the tests available in each file. 
 
 - mainPaperTests.Rmd: All the statistical tests run on the centralized scores.
 - runModelComparision.Rmd: This file contains the code to generate all the linear models that were created along with the other variants of models that were tested.
 - mainPaperTests_fullData.Rmd: This file contains all the tests run using the per-rater scores. This file mainly generates the results of the estimated marginal means. These are already pre-computed and made available in the "csv_storage" folder.
--computeNewSpacing_OSM.Rmd: This file contains the code needed to re-run the OSM's and compute the new scales.
+-computeNewSpacing_OSM.Rmd: This file contains the code needed to re-run the OSM's and compute the new scales. This file requires the ```stereord``` package.
 
 # Generating Figures
 

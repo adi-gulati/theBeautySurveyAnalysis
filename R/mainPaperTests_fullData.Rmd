@@ -11,7 +11,7 @@ library(lmerTest)
 library(ordinal) # clm
 library(readr)
 library(dplyr)
-library(stereord)
+#library(stereord)
 require(MASS) # polr
 require(Hmisc)
 library(brant)
