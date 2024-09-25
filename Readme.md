@@ -13,6 +13,8 @@ Note: Many of the R tests also use the helper CSV files. Please ensure these are
 
 The data is available in the corresponding Zenodo repository (link).
 
+All the data files are stored in the ``csv_storage'' folder. This folder also contains helper csv files used for the analysis. If you only want to access the collected ratings, the rater level scores can be found in the ```fullRatingsFile.csv``` file and the centralized scores can be found in the ```allAttributesMedians_df.csv```file.
+
 # Pre-computed Models in R
 
 
