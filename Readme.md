@@ -9,9 +9,9 @@ Note: Many of the R tests also use the helper CSV files. Please ensure these are
 
 # Data Availability
 
+~~The data collected during the survey is currently available only to reviewers and can be found in the supplementary material submitted with the manuscript. Extract these files from the zipped file attached in the supplementary material and place them in the “csv_storage” folder prior to running the tests and generating the figures.~~
 
-The data collected during the survey is currently available only to reviewers and can be found in the supplementary material submitted with the manuscript. Extract these files from the zipped file attached in the supplementary material and place them in the “csv_storage” folder prior to running the tests and generating the figures.
-
+The data is available in the corresponding Zenodo repository (link).
 
 # Pre-computed Models in R
 
@@ -30,6 +30,13 @@ Unlike the figure generation code in python, the R tests are split into multiple
 - mainPaperTests_fullData.Rmd: This file contains all the tests run using the per-rater scores. This file mainly generates the results of the estimated marginal means. These are already pre-computed and made available in the "csv_storage" folder.
 -computeNewSpacing_OSM.Rmd: This file contains the code needed to re-run the OSM's and compute the new scales.
 
+# Generating Figures
+
+All the figures used in the paper were generated using python. The code to generate the figures can be found in the mainPaperFigures.ipynb notebook inside the Python folder. The folder also contains the requirements file for the conda environment. Recreate it by:
+
+```
+conda create --name <env> --file requirements.txt
+```
 
 # Questions
 
