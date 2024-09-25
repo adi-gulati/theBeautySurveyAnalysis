@@ -766,7 +766,7 @@ load(file_name)
 M_OSM$phi
 ```
 
-Collapse 5 and 6 - weird - this is the first time I'm actually doing this
+Collapse 5 and 6
 
 ```{r,  echo=FALSE}
 df2$trustworthy_6L <- df2$trustworthy_7L
